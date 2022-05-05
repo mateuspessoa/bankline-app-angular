@@ -10,13 +10,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { CurrencyMaskModule } from "ng2-currency-mask";
+import { CorrentistaComponent } from './components/correntista/correntista.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MovimentacaoListComponent,
-    MovimentacaoNewComponent
+    MovimentacaoNewComponent,
+    CorrentistaComponent
   ],
   imports: [
     BrowserModule,

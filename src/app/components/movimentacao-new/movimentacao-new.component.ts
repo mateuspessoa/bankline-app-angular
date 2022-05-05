@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CorrentistaService } from 'src/app/services/correntista.service';
 import { MovimentacaoService } from 'src/app/services/movimentacao.service';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-movimentacao-new',
@@ -51,7 +52,13 @@ export class MovimentacaoNewComponent implements OnInit {
     this.movimentacaoService.create(movimentacao)
       .subscribe(
         response => {
-          console.log(response);
+          Swal.fire({
+            icon: 'success',
+            title: 'Movimentação Realizada',
+            text: 'Movimentação efetuada!',
+            showConfirmButton: false,
+            timer: 1500
+          });
         },
         error => {
           console.log(error);
