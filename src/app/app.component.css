@@ -1,0 +1,33 @@
+header {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(8, 8, 168);
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titulo{
+  margin-right: 480px;
+}
+
+h1 {
+  color: white;
+}
+
+.social ul {
+  display: flex;
+  list-style: none;
+}
+
+.social li {
+  color: white;
+  margin-right: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
