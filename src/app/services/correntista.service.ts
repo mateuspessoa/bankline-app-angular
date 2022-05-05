@@ -7,16 +7,12 @@ const baseUrl = 'https://projeto-bankline.herokuapp.com';
 @Injectable({
   providedIn: 'root'
 })
-export class MovimentacaoService {
+export class CorrentistaService {
 
   constructor(private http: HttpClient) { }
 
   list(): Observable<any> {
-    return this.http.get(`${baseUrl}/movimentacoes`);
+    return this.http.get(`${baseUrl}/correntistas`);
   }
-
-  create(movimentacao:any): Observable<any> {
-    return this.http.post(`${baseUrl}/movimentacoes`,movimentacao);
- }
-
 }
+

@@ -9,6 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { CurrencyMaskModule } from "ng2-currency-mask";
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CurrencyMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]
